@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PeopleController extends Controller
+class UserController extends Controller
 {
     public function index()
     {
-        return 'Estas en PeopleController';
+        return 'Estas en UserController';
     }
 }

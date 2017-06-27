@@ -25,4 +25,14 @@ class Company extends Model
         'slogan',
         'description'
     ];
+
+    public function users()
+    {
+        return $this->hasMany('App\Entities\User');
+    }
+
+    public function products()
+    {
+        return $this->hasMany('App\Entities\Product');
+    }
 }

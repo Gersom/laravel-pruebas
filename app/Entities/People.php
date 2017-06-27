@@ -27,4 +27,9 @@ class People extends Model
         'gender',
         'nickname'
     ];
+
+    public function users()
+    {
+        return $this->hasMany('App\Entities\User');
+    }
 }

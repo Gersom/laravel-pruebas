@@ -25,6 +25,17 @@ class Product extends Model
         'description',
         'name',
         'price',
-        'published'
+        'published',
+        'company_id'
     ];
+
+    public function images()
+    {
+        return $this->hasMany('App\Entities\Image');
+    }
+
+    public function company()
+    {
+        return $this->belongsTo('App\Entities\Company');
+    }
 }

@@ -24,6 +24,12 @@ class Image extends Model
         'original',
         'height_50px',
         'height_150px',
-        'height_500px'
+        'height_500px',
+        'product_id'
     ];
+
+    public function product()
+    {
+        return $this->belongsTo('App\Entities\Product');
+    }
 }

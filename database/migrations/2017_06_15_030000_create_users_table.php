@@ -20,6 +20,8 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->integer('role'); //1=administrator 2=company 3=person
+            $table->integer('company_id')->nullable();
+            $table->integer('people_id')->nullable();
 
             $table->rememberToken();
             $table->timestamps();

@@ -20,6 +20,7 @@ class CreateImagesTable extends Migration
             $table->text('height_50px');
             $table->text('height_150px');
             $table->text('height_500px');
+            $table->integer('product_id')->nullable();
 
             $table->timestamps();
         });
